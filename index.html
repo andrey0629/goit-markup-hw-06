@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     
     <title>WEB STUDIO</title>
@@ -44,7 +45,8 @@
         <!-- Заголовок -->
         <section class="section-order-service section">
             <div class="container">
-                <h1 class="order-titel">Effective Solutions <br/> for Your Business</h1>    
+                <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-once="false" class="order-titel">Effective Solutions <br /> for Your Business</h1>
+                <!-- <h1 class="order-titel">Effective Solutions <br/> for Your Business</h1> -->
                 <button type="button" class="button-order" data-modal-open>Order Service</button>
             </div>
         </section>
@@ -156,7 +158,7 @@
             <div class="container">
                 <h2 class="section-titel">Our Team</h2>
                 <ul class="our-team-links">
-                    <li class="our-team-li">
+                    <li data-aos="flip-left" data-aos-duration="2000" data-aos-once="false" class="our-team-li">
                         <!--<a class="our-team-link" href="#">-->
                             <img src="./images/team01.jpg" alt="Our Product Designer" width="264" height="260">
                             <div class="our-team-text">
@@ -195,7 +197,7 @@
                         </div>
                         <!--</a>-->
                     </li>
-                    <li class="our-team-li">
+                    <li data-aos="flip-left" data-aos-duration="2000" data-aos-once="false" class="our-team-li">
                         <img src="./images/team02.jpg" alt="Our Frontend Developer" width="264" height="260">
                             <div class="our-team-text">
                                 <h3 class="our-team-name">Tom Ford</h3>
@@ -232,7 +234,7 @@
                                 </ul>
                             </div>
                     </li>
-                    <li class="our-team-li">
+                    <li data-aos="flip-left" data-aos-duration="2000" data-aos-once="false" class="our-team-li">
                             <img src="./images/team03.jpg" alt="Our Marketing" width="264" height="260">
                             <div class="our-team-text">
                                 <h3 class="our-team-name">Camila Garcia</h3>
@@ -269,7 +271,7 @@
                                 </ul>
                             </div>
                     </li>
-                    <li class="our-team-li">
+                    <li data-aos="flip-left" data-aos-duration="2000" data-aos-once="false" class="our-team-li">
                             <img src="./images/team04.jpg" alt="Our UI Designer" width="264" height="260">
                             <div class="our-team-text">
                                 <h3 class="our-team-name">Daniel Wilson</h3>
@@ -370,8 +372,45 @@
                     <svg class="icon-close">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
-
                 </button>
+
+            <h3 class="form-titel">Leave your contacts and we will call you back</h3>
+
+            <form class="signup_form" name="signup_form" autocomplete="on" novalidate>
+                <ul class="form-ul">
+                    <li class="form-li">
+                        <label class="label" for="name">Name</label>
+                            <input class="input" type="name" name="name" />
+                    </li>
+                    <li class="form-li">
+                        <label class="label" for="tel">Phone</label>
+                            <input class="input" type="tel" name="tel" />
+                    </li>
+                    <li class="form-li">
+                        <label class="label" for="email">Email</label>
+                            <input class="input" type="email" name="email" />
+                    </li>
+                    <li class="form-li">
+                        <label class="label" for="comment">Comment</label>
+                            <input class="input comment" type="comment" name="comment" placeholder="Text input"/>
+                    </li>
+                </ul>
+
+                <div class="form-policy">
+                    <input type="checkbox" name="Policy" id="Policy"/>
+                <label for="policy" class="p-policy">I accept the terms and conditions of the 
+                    <span>
+                        <a class="a-policy" href="#">Privacy Policy</a>
+                    </span>
+                </label>
+                </div>
+                
+                
+                
+
+    <button class="button-order" type="submit">Send</button>
+</form>
+
             </div>
         </div>
 
@@ -421,9 +460,24 @@
                 </li>
             </ul>
         </div>
+        <form name="signup_form" autocomplete="on" novalidate>
+            <label>
+                Email
+                <input type="email" name="email" />
+            </label>
+        
+            <label>
+                Password
+                <input type="password" name="password" />
+            </label>
+        
+            <button type="submit">Submit</button>
+        </form>
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 
 </body>
 
