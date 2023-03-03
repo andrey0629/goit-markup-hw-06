@@ -380,19 +380,36 @@
                 <ul class="form-ul">
                     <li class="form-li">
                         <label class="label" for="name">Name</label>
-                            <input class="input" type="name" name="name" />
+                            <div class="div-input">
+                                <svg class="icon-form">
+                                    <use href="./images/icons.svg#icon-form-name"></use>
+                                </svg>
+                                <input class="input" id="name" type="name" name="name" />                            
+                            </div>
                     </li>
                     <li class="form-li">
                         <label class="label" for="tel">Phone</label>
-                            <input class="input" type="tel" name="tel" />
+                        <div class="div-input">    
+                            <svg class="icon-form">
+                                <use href="./images/icons.svg#icon-form-tel"></use>
+                            </svg>
+                            <input class="input" id="tel" type="tel" name="tel" />
+                    </div>
                     </li>
                     <li class="form-li">
                         <label class="label" for="email">Email</label>
-                            <input class="input" type="email" name="email" />
+                            <div class="div-input">
+                                <svg class="icon-form">
+                                    <use href="./images/icons.svg#icon-form-email"></use>
+                                </svg>
+                            <input class="input" id="email" type="email" name="email" />
+                        </div>
                     </li>
                     <li class="form-li">
                         <label class="label" for="comment">Comment</label>
-                            <input class="input comment" type="comment" name="comment" placeholder="Text input"/>
+                            <div class="div-input">
+                               <textarea class="input comment" type="comment" name="comment" id="comment" placeholder="Text input"></textarea>
+                            </div>
                     </li>
                 </ul>
 
