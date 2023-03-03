@@ -383,24 +383,37 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--subtle-text-color);
-    padding-left: 24px;
     margin-bottom: 4px;
+    position: relative;
+    bottom: 4px;
+}
+
+.div-input {
+    position: relative;
+    /*display: flex;
+    align-items: center;*/
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: 8px;
 }
 
 .icon-form {
     width: 18px;
     height: 24px;
-    position: relative;
-    left: 40px;
+    position: absolute;
+    left: 11px;
+    bottom: 8px;
     margin: 0;
 }
 
-.div-input {
-    position: relative;
-    display: flex;
-    align-items: center; 
-    max-width: 360px;
+.icon-form:hover {
+    fill: currentColor;
+}
 
+.div-input:hover,
+.div-input:focus {
+    color: var(--button-order-defauit);
+    fill: var(--button-order-defauit);
 }
 
 /*.div-input {
@@ -427,22 +440,38 @@ img {
     width: 360px;
     height: 40px;
     box-sizing: border-box;
-    border-color: var(--button-order-defauit);
-    border: 1px solid #4D5AE5;
+    border-color: var(--subtle-text-color);
+    border: 1px solid var(--subtle-text-color);
     border-radius: 4px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 8px;
+    margin: auto;
     padding-left: 38px;
 }
 
+.input:hover,
+.input:focus {
+    border-color: var(--button-order-defauit);
+    border: 1px solid var(--button-order-defauit);
+}
+
+/*input:focus-visible {
+    border-color: var(--button-order-defauit);
+    border: 1px solid var(--button-order-defauit);
+}
+
+
+.input-hov:hover {
+    border-color: var(--button-order-defauit);
+    border: 1px solid var(--button-order-defauit);
+}*/
+
 .input.comment {
     height: 120px;
+    width: 360px;
     margin-bottom: 0;
     padding-top: 8px;
     padding-left: 16px;
     display: flex;
-    text-align: right;
+    text-align: left;
     align-content: baseline;
     resize: none;
 
@@ -460,6 +489,31 @@ img {
     justify-content: center;
     margin-top: 16px;
     margin-bottom: 24px;
+    width: 360px;
+}
+
+.check {
+    padding-left: 32px;
+}
+
+.check__input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check__box {
+    visibility: visible;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    background-image: url('../images/icons.svg#icon-checkbox');
+}
+
+.check__input:checked + .check__box {
+    background-image: url('../images/icons.svg#icon-checkbox-click');
 }
 
 .p-policy {
@@ -468,6 +522,7 @@ img {
     letter-spacing: 0.04em;
     color: #757575;
     padding-left: 8px;
+    width: 360px;
 }
 
 .a-policy {
@@ -940,3 +995,101 @@ img {
     height: 24px;
     fill: var(--light-color);
 }
+
+.soc-media-titel.form {
+    margin-left: 80px;
+}
+
+                /* Форма в футере */
+
+.div-foot-input {
+    margin-left: 80px;
+    position: relative;
+    max-width: 453px;    
+}
+
+.input-foot {
+    width: 264px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin: auto;
+    padding-left: 16px;
+    background-color: transparent;
+    color: var(--accent-color)
+}
+
+.input-foot:placeholder {
+    padding-left: 16px;
+}
+
+.div-foot-button {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-subscribe {
+    width: 165px;
+    height: 40px;
+    margin-left: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--button-order-defauit);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding-left: 24px;
+    text-align: left;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--background-color);
+    transition-property: background-color;
+}
+
+.subscribe_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}    
+
+.icon-subscribe {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 24px;
+    bottom: 8px;
+    margin: 0;
+    fill: var(--background-color);
+}
+
+
+
+.icon-form:hover {
+    fill: currentColor;
+}
+
+.div-input:hover,
+.div-input:focus {
+    color: var(--button-order-defauit);
+    fill: var(--button-order-defauit);
+}
+
+.input-foot {
+    
+}
+
+.input:hover,
+.input:focus {
+    border-color: var(--button-order-defauit);
+    border: 1px solid var(--button-order-defauit);
+}
+

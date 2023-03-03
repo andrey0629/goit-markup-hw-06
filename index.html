@@ -23,7 +23,7 @@
             <a class="logo-link" href="./index.html">Web<span class="studio">Studio</span></a>
             
         <!-- Навигация -->
-                <ul class="nav-li">
+                <ul class="nav-li" data-aos="fade-in" data-aos-duration="3000" data-aos-once="false" >
                     <li><a class="header-link current" href="./index.html">Studio</a></li>
                     <li><a class="header-link" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="header-link last" href="">Contacts</a></li>
@@ -32,7 +32,7 @@
             
         <!-- Контакты -->
             <address>
-                <ul class="address">
+                <ul class="address" data-aos="fade-in" data-aos-duration="3000" data-aos-once="false" >
                     <li><a class="address-link mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="address-link tel" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
@@ -373,64 +373,71 @@
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
-
-            <h3 class="form-titel">Leave your contacts and we will call you back</h3>
-
             <form class="signup_form" name="signup_form" autocomplete="on" novalidate>
+                <h3 class="form-titel">Leave your contacts and we will call you back</h3>
+            
                 <ul class="form-ul">
                     <li class="form-li">
-                        <label class="label" for="name">Name</label>
-                            <div class="div-input">
-                                <svg class="icon-form">
-                                    <use href="./images/icons.svg#icon-form-name"></use>
-                                </svg>
-                                <input class="input" id="name" type="name" name="name" />                            
-                            </div>
-                    </li>
-                    <li class="form-li">
-                        <label class="label" for="tel">Phone</label>
-                        <div class="div-input">    
-                            <svg class="icon-form">
-                                <use href="./images/icons.svg#icon-form-tel"></use>
-                            </svg>
-                            <input class="input" id="tel" type="tel" name="tel" />
-                    </div>
-                    </li>
-                    <li class="form-li">
-                        <label class="label" for="email">Email</label>
-                            <div class="div-input">
-                                <svg class="icon-form">
-                                    <use href="./images/icons.svg#icon-form-email"></use>
-                                </svg>
-                            <input class="input" id="email" type="email" name="email" />
+                        <div class="div-input">
+                            <label class="label" for="name">Name</label>
+                                    <input class="input" id="name" type="name" name="name" />
+                                        <svg class="icon-form">
+                                        <use href="./images/icons.svg#icon-form-name"></use>
+                                    </svg>
                         </div>
                     </li>
                     <li class="form-li">
+                        <div class="div-input">
+                            <label class="label" for="tel">Phone</label>
+                                <input class="input" id="tel" type="tel" name="tel" />
+                                    <svg class="icon-form">
+                                        <use href="./images/icons.svg#icon-form-tel"></use>
+                                    </svg>
+                        </div>
+                    </li>
+                    <li class="form-li">
+                        <div class="div-input">
+                            <label class="label" for="email">Email</label>
+                                <input class="input" id="email" type="email" name="email" />
+                                    <svg class="icon-form">
+                                    <use href="./images/icons.svg#icon-form-email"></use>
+                                </svg>
+                        </div>
+                    </li>
+                    <li class="form-li">
+                        <div class="div-input">
                         <label class="label" for="comment">Comment</label>
-                            <div class="div-input">
-                               <textarea class="input comment" type="comment" name="comment" id="comment" placeholder="Text input"></textarea>
-                            </div>
+                            <textarea class="input comment" type="comment" name="comment" id="comment"
+                                placeholder="Text input"></textarea>
+                        </div>
                     </li>
                 </ul>
-
+            
                 <div class="form-policy">
-                    <input type="checkbox" name="Policy" id="Policy"/>
-                <label for="policy" class="p-policy">I accept the terms and conditions of the 
-                    <span>
-                        <a class="a-policy" href="#">Privacy Policy</a>
-                    </span>
-                </label>
+                    <label for="policy" class="check option">
+                    <input class="check__input" type="checkbox" name="policy" id="policy" />
+                        <span class="check__box"></span>
+                         <p class="p-policy">I accept the terms and conditions of the
+                            <a class="a-policy" href="#">Privacy Policy</a></p>
+                    </label>
                 </div>
-                
-                
-                
 
-    <button class="button-order" type="submit">Send</button>
-</form>
-
+                <!--<div class="form-policy">
+                    <input class="check__input" type="checkbox" name="Policy" id="Policy" />
+                    <label for="policy" class="p-policy">I accept the terms and conditions of the
+                        <span>
+                            <a class="a-policy" href="#">Privacy Policy</a>
+                        </span>
+                    </label>
+                </div>-->
+            
+                <button class="button-order" type="submit">Send</button>
+            </form>
+            
+            
             </div>
         </div>
-
+            
     </main>
 
     <footer class="footer">
@@ -475,20 +482,28 @@
                         </li>
                     </ul>
                 </li>
+                <li class="foot-li foot-form">
+                    <div class="foot-form">
+                        <h3 class="soc-media-titel form">Subscribe</h3>
+                        
+                        <form class="subscribe_form" name="signup_form" autocomplete="on" novalidate>
+                            <div class="div-foot-input">
+                                <label class="label" for="e-mail"></label>
+                                    <input class="input-foot" id="e-mail" type="email" name="email" placeholder="E-mail"/>
+                            </div>
+                            <div class="div-foot-button">
+                                <button class="button-subscribe" type="submit">Subscribe</button>
+                                    <svg class="icon-subscribe">
+                                        <use href="./images/icons.svg#icon-subscribe-button"></use>
+                                    </svg>
+                            </div>
+
+                    </div>
+                </li>
             </ul>
         </div>
-        <form name="signup_form" autocomplete="on" novalidate>
-            <label>
-                Email
-                <input type="email" name="email" />
-            </label>
         
-            <label>
-                Password
-                <input type="password" name="password" />
-            </label>
         
-            <button type="submit">Submit</button>
         </form>
     </footer>
 
