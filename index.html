@@ -376,45 +376,43 @@
 
                 <h3 class="form-titel">Leave your contacts and we will call you back</h3>
 
-                <form class="signup_form" name="signup_form" autocomplete="on">
+                <form class="signup_form" name="signup_form" autocomplete="on" >
             
-                <ul class="form-ul">
-                    <li class="form-li">
-                        <div class="div-input">
-                            <label class="label" for="name">Name</label>
-                                    <input class="input" id="name" type="name" name="name" />
-                                        <svg class="icon-form">
-                                        <use href="./images/icons.svg#icon-form-name"></use>
-                                    </svg>
-                        </div>
-                    </li>
-                    <li class="form-li">
-                        <div class="div-input">
-                            <label class="label" for="tel">Phone</label>
-                                <input class="input" id="tel" type="tel" name="tel" />
-                                    <svg class="icon-form">
-                                        <use href="./images/icons.svg#icon-form-tel"></use>
-                                    </svg>
-                        </div>
-                    </li>
-                    <li class="form-li">
-                        <div class="div-input">
-                            <label class="label" for="email">Email</label>
-                                <input class="input" id="email" type="email" name="email" />
-                                    <svg class="icon-form">
-                                    <use href="./images/icons.svg#icon-form-email"></use>
-                                </svg>
-                        </div>
-                    </li>
-                    <li class="form-li">
-                        <div class="div-input">
-                        <label class="label" for="comment">Comment</label>
-                            <textarea class="input comment" type="comment" name="comment" id="comment"
-                                placeholder="Text input"></textarea>
-                        </div>
-                    </li>
-                </ul>
+                <label class="label" for="name">
+                    <p class="p-label">Name</p>
+                    <div class="div-input">
+                    <input class="input" id="name" type="name" name="name" required/>
+                        <svg class="icon-form">
+                            <use href="./images/icons.svg#icon-form-name"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="label" for="tel">
+                    <p class="p-label">Phone</p>
+                    <div class="div-input">
+                    <input class="input" id="tel" type="tel" name="tel" />
+                        <svg class="icon-form">
+                            <use href="./images/icons.svg#icon-form-tel"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="label" for="email">
+                    <p class="p-label">Email</p>
+                    <div class="div-input">
+                    <input class="input" id="email" type="email" name="email" required/>
+                        <svg class="icon-form">
+                            <use href="./images/icons.svg#icon-form-email"></use>
+                        </svg>
+                    </div>
+                </label>
+                <label class="label" for="comment">
+                    <p class="p-label">Comment</p>
+                    <div class="div-input">
+                    <textarea class="input comment" type="comment" name="comment" id="comment"
+                        placeholder="Text input"></textarea>
+                </label>
             
+            </div>
                 <div class="form-policy">
                     <label class="check" for="policy">
                         <input class="check__input" type="checkbox" name="policy" id="policy" />
@@ -494,13 +492,12 @@
                                 <label class="label" for="e-mail"></label>
                                     <input class="input-foot" id="e-mail" type="email" name="email" placeholder="E-mail"/> 
                             </div>
-                            <div class="div-foot-button">
-                                <button class="button-subscribe" type="submit">Subscribe</button>
+                                <button class="button-subscribe" type="submit">
+                                    <span class="button-subscribe-span">Subscribe</span>
                                     <svg class="icon-subscribe">
                                         <use href="./images/icons.svg#icon-subscribe-button"></use>
                                     </svg>
-                            </div>
-
+                                </button>
                     </div>
                 </li>
             </ul>
