@@ -475,6 +475,7 @@ img {
 }
 
 .check {
+    position: relative;
     padding-left: 0px;
 }
 
@@ -496,6 +497,7 @@ img {
     width: 16px;
     height: 16px;
     margin-top: 0;
+    margin-left: -345px;
     border-radius: 2px;    
     /*background-image: url(<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.875" d="M3 0.938h18c1.139 0 2.063 0.923 2.063 2.063v18c0 1.139-0.923 2.063-2.063 2.063h-18c-1.139 0-2.063-0.923-2.063-2.063v-18c0-1.139 0.923-2.063 2.063-2.063z"></path>);
     background-image: url('../images/icons.svg#icon-checkbox');*/
@@ -972,14 +974,14 @@ img {
     fill: var(--light-color);
 }
 
-.soc-media-titel.form {
-    margin-left: 80px;
-}
 
                 /* Форма в футере */
 
-.div-foot-input {
+.foot-form {
     margin-left: 80px;
+}
+
+.div-foot-input {
     position: relative;
     max-width: 453px;    
 }
